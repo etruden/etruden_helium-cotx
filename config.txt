@@ -1,4 +1,4 @@
-core_freq=400
+core_freq=700
 dtoverlay=spi0-1cs
 dtparam=i2c_arm=on
 dtparam=spi=on
