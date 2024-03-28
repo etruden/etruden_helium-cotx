@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  balena-cli: v16.7.0
+  balena-cli: v18.1.5
   raspberrypi4-64: 4.0.7+rev3
   cloud: nebra-cloud
 
