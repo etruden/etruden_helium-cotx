@@ -34,10 +34,6 @@ jobs:
 
           if [ $miner == 'cotx' ] ; then
             wget https://raw.githubusercontent.com/NebraLtd/helium-miner-software/production/balena/config/config.txt.syncrobit -O config.txt
-          elif [ $miner == 'nebra-indoor2' ]; then
-            echo "No config.txt file needed - not RasPi based."
-          else
-            wget https://raw.githubusercontent.com/NebraLtd/helium-miner-software/production/balena/config/config.txt.rak -O config.txt
           fi
       - name: Push updated docker compose and balena.yml files
         if: success()
@@ -81,10 +77,6 @@ jobs:
 
           if [ $miner == 'cotx' ] ; then
             wget https://raw.githubusercontent.com/NebraLtd/helium-miner-software/master/balena/config/config.txt.syncrobit -O config.txt
-          elif [ $miner == 'nebra-indoor2' ] ; then
-            echo "No config.txt file needed - not RasPi based."
-          else
-            wget https://raw.githubusercontent.com/NebraLtd/helium-miner-software/master/balena/config/config.txt.rak -O config.txt
           fi
       - name: Push updated docker compose and balena.yml files
         if: success()
